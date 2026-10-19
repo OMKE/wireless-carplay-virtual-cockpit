@@ -6,6 +6,12 @@ Before this, the CarPlay map on the Virtual Cockpit (VC) only worked with a USB 
 
 > ✅ Tested in the car on 2026-10-19: Google Maps on the VC, wireless, zoom with the wheel works.
 
+![Google Maps on the Audi Virtual Cockpit over wireless CarPlay](media/virtual-cockpit.jpg)
+
+https://github.com/user-attachments/assets/9a17e6ca-0180-4f53-975d-7e01604c9c29
+
+<img src="media/dongle.jpg" alt="The Smart Box AX1800M dongle" width="300">
+
 ---
 
 ## Will this work for me?
