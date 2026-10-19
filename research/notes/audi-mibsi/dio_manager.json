@@ -1,0 +1,251 @@
+{
+  "usb": {
+    "ppsPath": "/ramdisk/pps/device",
+    "asi": {
+      "roleSwap": "role_swap"
+    },
+    "scripts": {
+      "enableUSBPower": "/etc/scripts/enable_usb_pwr_0.sh",
+      "disableUSBPower": "/etc/scripts/disable_usb_pwr_0.sh"
+    }
+  },
+  "mdnsd": {
+    "bin": "/mnt/app/armle/usr/sbin/mdnsd",
+    "pidBasePath": "/var/run/mdnsd",
+    "pidAbsolutePath": "/var/run/mdnsd/mdnsd.pid",
+    "env": {
+      "directLink": "MDNS_DIRECTLINK_IFACE=carplay0",
+      "probeCount": "mDNSPlatformDefaultProbeCountForTypeUnique=0",
+      "sock": ""
+    }
+  },
+  "iap2": {
+    "device": "iap://ffs:///dev/otg-cinemo",
+    "auth": "i2c:///dev/i2c8:17?sclock=50000&txn=1",
+    "cinemoLib": "/armle/usr/lib/cinemo",
+    "cinemoLogFilePath": "/tmp/CinemoDioManager.log",
+    "connectionTimeoutMs": 6000,
+    "cinemoLogTarget": 5,
+    "cinemoLogLevel": 3,
+    "accessoryIdentification": {
+      "manufacturer": "HARMAN",
+      "firmwareVersion": "DEV_MMX2QC_AU_ER_G22_201PROD",
+      "displayName": "AUDI MMI"
+    },
+    "power": {
+      "availableCurrent": 1500
+    },
+    "LinkThreadPrio": "21",
+    "pps": {
+      "reader": {
+        "thread": {
+          "priority": 10,
+          "name": "DIOPulseThread"
+        },
+        "path": "/ramdisk/pps/iap2"
+      },
+      "device": {
+        "ppsObjectName": "device",
+        "deviceAttributes": {
+          "name": "DeviceName",
+          "language": "DeviceLanguage"
+        }
+      },
+      "nowplaying": {
+        "ppsObjectName": "nowplaying",
+        "trackAttributes": {
+          "title": "MediaItemTitle",
+          "duration": "MediaItemPlaybackDurationInMilliseconds",
+          "albumTitle": "MediaItemAlbumTitle",
+          "artist": "MediaItemArtist",
+          "genre": "MediaItemGenre",
+          "composer": "MediaItemComposer"
+        },
+        "playbackAttributes": {
+          "elapsedTime": "PlaybackElapsedTimeInMilliseconds",
+          "status": "PlaybackStatus",
+          "shuffleMode": "PlaybackShuffleMode",
+          "repeatMode": "PlaybackRepeatMode",
+          "appName": "PlaybackAppName"
+        },
+        "playbackStatus": {
+          "stopped": "Stopped",
+          "playing": "Playing",
+          "paused": "Paused",
+          "seekForward": "SeekForward",
+          "seekBackward": "SeekBackward"
+        },
+        "shuffleMode": {
+          "off": "Off",
+          "songs": "Songs",
+          "albums": "Albums"
+        },
+        "repeatMode": {
+          "off": "Off",
+          "one": "One",
+          "all": "All"
+        }
+      },
+      "telephony": {
+        "ppsObjectName": "telephony",
+        "callStateAttributes": {
+          "callID": "UniqueCallID",
+          "phoneNumber": "CallStatePhoneNumber",
+          "callerName": "CallStateCallerName",
+          "status": "CallStateStatus",
+          "direction": "CallStateDirection"
+        },
+        "phoneStateAttributes": {
+          "signalStrength": "TelephonySignalStrength",
+          "registrationStatus": "TelephonyRegistrationStatus",
+          "airplaneModeStatus": "TelephonyAirplaneModeStatus",
+          "mobileOperator": "MobileOperator"
+        },
+        "signalStrength": {
+          "bars_0": "0 bars",
+          "bars_1": "1 bars",
+          "bars_2": "2 bars",
+          "bars_3": "3 bars",
+          "bars_4": "4 bars",
+          "bars_5": "5 bars"
+        },
+        "registrationStatus": {
+          "unknown": "Unknown",
+          "notRegistered": "Not Registered",
+          "denied": "Denied",
+          "registeredHome": "Registered Home",
+          "roaming": "Roaming",
+          "eCallsOnly": "Emergency Calls Only"
+        },
+        "callState": {
+          "disconnected": "Disconnected",
+          "active": "Active",
+          "holding": "Holding",
+          "connecting": "Connecting"
+        },
+        "callDirection": {
+          "incoming": "Incoming",
+          "outgoing": "Outgoing",
+          "unknown": "Unknown"
+        }
+      }
+    },
+    "MessagesSentByAccessory": [
+      "0x5000",
+      "0x5002",
+      "0xAE00",
+      "0xAE02",
+      "0xAE03",
+      "0x4154",
+      "0x4156",
+      "0x4157",
+      "0x4159",
+      "0xFFFB",
+      "0x4C00",
+      "0x4C02",
+      "0x4C03",
+      "0x4C05",
+      "0x5200",
+      "0x5203"
+    ],
+    "MessagesReceivedFromDevice": [
+      "0x4E09",
+      "0x4E0A",
+      "0x4E0C",
+      "0x5001",
+      "0xAE01",
+      "0x4155",
+      "0x4158",
+      "0xFFFA",
+      "0xFFFC",
+      "0x4C01",
+      "0x4C04",
+      "0x5201",
+      "0x5202",
+      "0x5204"
+    ],
+    "nmea": "0x0003",
+    "exlap": {
+      "protocol": [
+        "com.audi.exlap",
+        "com.audi.carplay.exlap",
+        "com.volkswagen.exlap",
+        "com.vwag.infotainment.carplay.exlap"
+      ],
+      "matchAction": 0
+    }
+  },
+  "nmea": {
+    "updatePeriod": 1000,
+    "predDuration": 0,
+    "predLength": 0,
+    "deadReckoning": true,
+    "mapPositioning": false
+  },
+  "oem": {
+    "iconPath": "/etc/eso/media/carplay_oemicon.png"
+  },
+  "hid": {
+    "vendorId": "0x1A96",
+    "productId": "0x2018",
+    "countryCode": 9,
+    "descriptor": {
+      "acHome": true,
+      "acBack": true,
+      "hookSwitch": false,
+      "flash": true,
+      "drop": false,
+      "play": true,
+      "pause": true,
+      "ff": true,
+      "rewind": true,
+      "next": true,
+      "previous": true
+    }
+  },
+  "limitedUI": {
+    "enabled": false,
+    "activationSwitch": 0,
+    "updateMethod": 0,
+    "uiElements": [
+      "softKeyboard",
+      "softPhoneKeypad",
+      "nonMusicLists",
+      "musicLists",
+      "japanMaps"
+    ]
+  },
+  "airplay": {
+    "screenRxThreadPrio": "SCREEN_RECEIVER_THREAD_PRIO=17",
+    "audioRxThreadPrio": "AUDIO_RECEIVER_THREAD_PRIO=18",
+    "timeSyncClientThreadPrio": "TIME_SYNC_CLIENT_THREAD_PRIO=19"
+  },
+  "audio": {
+    "audioDumping": false,
+    "audioDumpingPath": "/fs/sda0",
+    "audioDumpingInitSize": 20971520,
+    "audioTornDownNotify": false,
+    "audioLatency": {
+      "default": {
+        "inLatency": "ALL_IN_LATENCY=95",
+        "outLatency": "ALL_OUT_LATENCY=80"
+      },
+      "telephony": {
+        "inLatency": "TEL_IN_LATENCY=85",
+        "outLatency": "TEL_OUT_LATENCY=80"
+      },
+      "speech": {
+        "inLatency": "SPEECH_IN_LATENCY=85",
+        "outLatency": "SPEECH_OUT_LATENCY=80"
+      }
+    }
+  },
+  "screen": {
+    "maxFPS": 30,
+    "badFramesThreshold": 10,
+    "videoDumping": false,
+    "videoDumpingPath": "/fs/sda0",
+    "videoDumpingInitSize": 20971520,
+    "nvSSOutputDevice": "NVSS_VIDEO_OUTPUT_DEVICE=0"
+  }
+}

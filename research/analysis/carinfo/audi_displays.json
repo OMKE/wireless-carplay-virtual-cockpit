@@ -1,0 +1,85 @@
+[
+  {
+    "widthPixels": 1024,
+    "features": 2,
+    "heightPhysical": 88,
+    "initialViewArea": 0,
+    "heightPixels": 480,
+    "maxFPS": 30,
+    "uuid": "e5f7a68d-7b0f-4305-984b-974f677a150b",
+    "viewAreas": [
+      {
+        "widthPixels": 1024,
+        "viewAreaTransitionControl": false,
+        "originXPixels": 0,
+        "safeArea": {
+          "widthPixels": 1024,
+          "originXPixels": 0,
+          "originYPixels": 0,
+          "heightPixels": 480,
+          "drawUIOutsideSafeArea": false
+        },
+        "originYPixels": 0,
+        "heightPixels": 480
+      }
+    ],
+    "widthPhysical": 188
+  },
+  {
+    "widthPixels": 1440,
+    "features": 2,
+    "heightPhysical": 120,
+    "primaryInputDevice": 3,
+    "initialViewArea": 0,
+    "heightPixels": 540,
+    "maxFPS": 60,
+    "uuid": "b7e6c5a0-2222-4000-8000-000000000002",
+    "viewAreas": [
+      {
+        "widthPixels": 1440,
+        "viewAreaTransitionControl": false,
+        "originXPixels": 0,
+        "safeArea": {
+          "widthPixels": 720,
+          "originXPixels": 360,
+          "originYPixels": 87,
+          "heightPixels": 297,
+          "drawUIOutsideSafeArea": false
+        },
+        "originYPixels": 0,
+        "heightPixels": 540
+      },
+      {
+        "widthPixels": 1440,
+        "viewAreaTransitionControl": false,
+        "originXPixels": 0,
+        "safeArea": {
+          "widthPixels": 400,
+          "originXPixels": 520,
+          "originYPixels": 87,
+          "heightPixels": 297,
+          "drawUIOutsideSafeArea": false
+        },
+        "originYPixels": 0,
+        "heightPixels": 540
+      },
+      {
+        "widthPixels": 1440,
+        "viewAreaTransitionControl": false,
+        "originXPixels": 0,
+        "safeArea": {
+          "widthPixels": 350,
+          "originXPixels": 114,
+          "originYPixels": 88,
+          "heightPixels": 296,
+          "drawUIOutsideSafeArea": false
+        },
+        "originYPixels": 0,
+        "heightPixels": 540
+      }
+    ],
+    "widthPhysical": 320,
+    "initialURL": "maps:/car/instrumentcluster",
+    "type": 111
+  }
+]

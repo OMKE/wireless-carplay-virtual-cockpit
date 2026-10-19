@@ -1,0 +1,220 @@
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+pthread_mutex_lock
+pthread_mutex_unlock
+pthread_cond_broadcast
+clock_gettime
+select
+__get_errno_ptr
+recvfrom
+pthread_mutex_trylock
+waitpid
+spawnl
+shutdown
+pthread_self
+pthread_equal
+pthread_join
+usleep
+pthread_cond_timedwait
+memcpy
+pthread_create
+access
+sysconf
+mprotect
+socket
+getpid
+dlopen
+memset
+strlen
+pthread_cond_signal
+memmove
+realloc
+rename
+unlink
+pthread_cond_wait
+CinemoCreateIAP
+_ZN14NmeIAP2Message6DecodeEPKhi
+_ZNK14NmeIAP2Message6EncodeER8NmeArrayIhE
+_ZN12NmeTransport4SendEPKhjPj
+vsnprintf
+accept
+sigemptyset
+sigaddset
+pthread_sigmask
+setsockopt
+listen
+libsocket.so.3
+_btext
+__exidx_start
+__exidx_end
+__data_start
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_stack
+libmhi2qcarplaycluster.so
+libsocket.so.2
+widthPixels
+heightPixels
+originXPixels
+originYPixels
+drawUIOutsideSafeArea
+viewAreaTransitionControl
+safeArea
+b7e6c5a0-2222-4000-8000-000000000002
+maps:/car/instrumentcluster
+params
+streams
+/tmp/mhi2q_aa_ui_view.state
+showUI
+stopUI
+/eso/bin/apps/mhi2q-aa-cluster-display
+--live-carplay
+forceKeyFrame
+updateViewArea
+viewAreaIndex
+animationDurationMillis
+adjacentViewAreas
+changeMapZoomLevel
+zoomDirection
+enabledFeatures
+viewAreas
+altScreen
+streamConnectionID
+dataPort
+features
+displays
+maxFPS
+widthPhysical
+heightPhysical
+primaryInputDevice
+initialURL
+initialViewArea
+hidDevices
+displayUUID
+Eso_Knob
+hidDescriptor
+MHI2Q_ClusterKnob
+libairplay.so
+AirPlayReceiverSessionSetup
+AirPlayReceiverSessionTearDown
+AirPlayCopyServerInfo
+AirPlayReceiverSessionSendCommand
+AirPlayReceiverSessionForceKeyFrame
+ScreenStreamCreate
+_ZN3dio12OmxVideoImpl10initializeERPFvvE
+_ZN3dio12OmxVideoImpl6decodeEPhjyb
+_ZN3dio12OmxVideoImpl9configureEjjjjjjj
+_ZN3dio12OmxVideoImpl5startEv
+_ZN3dio12OmxVideoImpl4stopEv
+_ZN3dio12OmxVideoImpl13setVisibilityEh
+CFStringCreateWithCString
+CFPropertyListCreateDeepCopy
+CFRelease
+CFDictionaryGetValue
+CFDictionarySetValue
+CFDictionaryGetInt64
+CFDictionarySetInt64
+CFDictionarySetCString
+CFDictionaryCreateMutable
+CFArrayCreateMutable
+CFArrayCreateMutableCopy
+CFArrayGetCount
+CFArrayGetValueAtIndex
+CFArrayAppendValue
+CFArrayAppendCString
+CFPropertyListCreateData
+CFDataGetLength
+CFDataGetBytePtr
+AirPlayReceiverSessionScreen_Create
+AirPlayReceiverSessionScreen_Delete
+AirPlayReceiverSessionScreen_Setup
+AirPlayReceiverSessionScreen_SetTimeSynchronizer
+AirPlayReceiverSessionScreen_SetSecurityInfo
+AirPlayReceiverSessionScreen_UpdateState
+AirPlayReceiverSessionScreen_StartSession
+AirPlayReceiverSessionScreen_ProcessFrames
+AirPlayReceiverSessionScreen_StopSession
+AirPlay_DeriveAESKeySHA512ForScreen
+ServerSocketOpen
+SocketAccept
+NetSocket_CreateWithNative
+NetSocket_Delete
+HIDDeviceCreateVirtual
+HIDRegisterDevice
+HIDDeregisterDevice
+HIDKnobFillReport
+HIDDevicePostReport
+HIDDeviceCopyProperty
+CFRetain
+CFEqual
+kCFLDictionaryKeyCallBacksCFLTypes
+kCFLDictionaryValueCallBacksCFLTypes
+kCFLArrayCallBacksCFLTypes
+kCFLBooleanFalse
+_ZN3dio11CDIOManager28s_serverCopyPropertyCallbackEP28AirPlayReceiverServerPrivateP9CFLStringPKvPiPv
+_ZN14NmeIAP2Message6DecodeEPKhi
+_ZNK14NmeIAP2Message6EncodeER8NmeArrayIhE
+_ZN12NmeTransport4SendEPKhjPj
+CinemoCreateIAP
+ICinemoIAP_AddRef
+ICinemoIAP_Release
+ICinemoIAP_SendIAP2
+/tmp/mhi2q_carplay_nav_proxy.state.new
+/tmp/mhi2q_carplay_nav_proxy.state
+MHI2Q_AA_NAV_V2
+0123456789abcdef
+RouteGuidanceDisplayComponent
+/eso/bin/apps/mhi2q-aa-turn-card-renderer
+turn-card: cannot spawn renderer errno=%d
+turn-card: renderer started pid=%d
+turn-card: singleton owned by an earlier GAL renderer; retrying in 10s
+turn-card: renderer exited result=%d status=0x%x stop=%d
+turn-card: executable unavailable at %s errno=%d
+turn-card: cannot start supervisor rc=%d
+stream: viewer connected, waiting for complete IDR access unit
+stream: non-IDR received while unsynchronized; requesting focus bounce
+stream: cannot prime viewer without codec configuration
+stream: viewer synchronized at complete IDR access unit
+stream: viewer disconnected after %llu bytes
+annex-b
+timed-access-units
+framed-access-units
+stream: socket creation failed errno=%d
+stream: cannot listen on TCP port %u errno=%d
+stream: writer thread creation failed (%d)
+stream: loopback ready port=%u mode=%s queue=%u bytes packets=%u max=%u
+stream: oversized access unit length=%u max=%u
+stream: queue saturated after %u ms; marking discontinuity packets=%u bytes=%u length=%u
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+GCC: (GNU) 4.9.4
+.shstrtab
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.rodata
+.ARM.exidx
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.comment
+.ARM.attributes
