@@ -25,7 +25,6 @@ You need **all three**:
   - Package I used (got it from a Facebook group): [`car/mibsi-p5092-…-sd-bundle.zip`](car/). It contains `install.zip` and `uninstall.zip` plus a README.
   - **It only installs on MMI firmware `MHI2Q_ER_AUG22_P5092_MU1329`.** The installer refuses any other firmware. Check your version in the MMI (red engineering menu / software version).
   - Install: unzip `install.zip` to the root of an empty FAT32 SD card, open the red update menu → Update → SD card → Standard, and wait until it finishes. `uninstall.zip` restores the backup the same way.
-  - Related open-source project: [yuedizhibo/MHI2Q-CarPlay-AltScreen](https://github.com/yuedizhibo/MHI2Q-CarPlay-AltScreen)
 - My car: **Audi A5, 2017**, MHI2Q on firmware P5092.
 
 > **Any cluster-CarPlay mod should work, not just MIBSI.** All the changes are on the dongle. It passes on whatever cluster display the car offers, exactly like an iPhone on a cable would see it. So if your car shows the CarPlay map on the VC with a cable, whichever custom firmware or mod did that, the dongle should carry it over wirelessly. One catch: the current build has the cluster display's id and size built in (`b7e6c5a0-2222-4000-8000-000000000002`, 1440×540, from MIBSI, see `src/altscreen.c`). A mod that uses different values needs those two lines changed and a rebuild. I've only tested it with the MIBSI package below, so reports with other mods are welcome.
